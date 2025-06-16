@@ -1,7 +1,8 @@
-import React from "react";
+import React, {useState} from "react";
 import "../App.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEye, faEyeSlash } from "@fortawesome/free-solid-svg-icons";
+
 
 
 const RegistrationForm = () => {

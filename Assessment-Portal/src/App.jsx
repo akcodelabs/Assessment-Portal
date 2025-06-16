@@ -1,10 +1,13 @@
-import { useState }  from "react";
+import React from "react";
 import RegistrationForm from "./component/RegistrationForm";
-import './App.css'
+import "./App.css";
 
-function App(){
-    return(
-        <><RegistrationForm></RegistrationForm></>
-    )
+function App() {
+  return (
+    <div className="center-container">
+      <RegistrationForm />
+    </div>
+  );
 }
-export default App
+
+export default App;
