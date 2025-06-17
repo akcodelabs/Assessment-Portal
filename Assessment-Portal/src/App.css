@@ -1,0 +1,123 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  background-color: #f0f2f5;
+}
+
+.container {
+  max-width: 90%;
+  margin: 20px auto;
+  padding: 30px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.filters select,
+.filters button {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  min-width: 150px;
+  font-weight: bold;
+}
+
+/* Colored filter dropdowns */
+.filter-category {
+  background-color: #e3f2fd;
+}
+.filter-difficulty {
+  background-color: #fff3e0;
+}
+.filter-status {
+  background-color: #f3e5f5;
+}
+.filter-sort {
+  background-color: #e8f5e9;
+}
+
+#resultsCounter {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.results {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.results li {
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  transition: 0.3s;
+}
+
+/* Background color by category */
+.row-java {
+  background-color: #e3f2fd; /* light blue */
+}
+.row-html {
+  background-color: #fff3e0; /* light orange */
+}
+.row-css {
+  background-color: #e8f5e9; /* light green */
+}
+
+/* Tag styles */
+.category.java {
+  color: #1565c0;
+  font-weight: bold;
+}
+.category.html {
+  color: #ef6c00;
+  font-weight: bold;
+}
+.category.css {
+  color: #2e7d32;
+  font-weight: bold;
+}
+
+.difficulty.easy {
+  color: #388e3c;
+}
+.difficulty.medium {
+  color: #fbc02d;
+}
+.difficulty.hard {
+  color: #d32f2f;
+}
+
+.status.notstarted {
+  color: #616161;
+}
+.status.inprogress {
+  color: #1976d2;
+}
+.status.completed {
+  color: #388e3c;
+}
