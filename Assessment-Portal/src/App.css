@@ -1,0 +1,139 @@
+/* Reset & base styles */
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fff;
+  }
+  
+  .login-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 20px;
+  }
+  
+  /* Top-left logo */
+  .logo-top-left {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-weight: bold;
+    color: #e65100;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 14px;
+  }
+  
+  .logo-top-left img {
+    height: 40px;
+  }
+  
+  /* Login card */
+  .login-card {
+    background: #fff;
+    padding: 40px 32px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  .login-logo {
+    height: 92px;
+    margin-bottom: 10px;
+  }
+  
+  .login-subtitle {
+    color: #888;
+    font-size: 0.95rem;
+    margin-top: 4px;
+  }
+  
+  /* Role selector */
+  .role-select {
+    border: 2px solid #e65100;
+    color: #e65100;
+    border-radius: 12px;
+    padding: 16px;
+    margin: 30px auto;
+    width: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff7f0;
+    font-weight: 600;
+    font-size: 1rem;
+  }
+  
+  .role-icon {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  /* Form */
+  .login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: left;
+    margin-top: 10px;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    font-size: 0.85rem;
+    color: #444;
+    margin-bottom: 6px;
+  }
+  
+  input {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+  }
+  
+  /* Button */
+  button {
+    padding: 12px;
+    background-color: #ff5900;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.2s ease;
+  }
+  
+  button:hover {
+    background-color: #bf360c;
+  }
+  
+  /* Signup */
+  .signup-link {
+    margin-top: 20px;
+    font-size: 0.85rem;
+  }
+  
+  .signup-link a {
+    color: #e65100;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .signup-link a:hover {
+    text-decoration: underline;
+  }
