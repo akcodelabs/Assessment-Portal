@@ -1,11 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react';
+import Signup from './pages/Signup';
 
-const App = () => {
+
+function App() {
   return (
-    <div>
-      
+    <div className='App'>
+      <Signup></Signup>
     </div>
   )
 }
 
-export default App
+export default App;
