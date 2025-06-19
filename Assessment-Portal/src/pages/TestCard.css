@@ -1,0 +1,136 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f0f0f0;
+  margin: 0;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+/* Logo in top-left of full page */
+.page-logo {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+}
+
+/* Main quiz container */
+.quiz-wrapper {
+  background: #fff;
+  width: 600px;
+  border-radius: 8px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.1);
+  overflow: hidden;
+  margin-top: 60px;
+}
+
+.quiz-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.mcq-title {
+  font-weight: bold;
+  font-size: 20px;
+  color: #000;
+  text-align: center;
+  flex: 1;
+}
+
+.timer {
+  font-weight: bold;
+  font-size: 16px;
+  color: #444;
+}
+
+.red-blink {
+  color: red;
+  animation: blink 1s step-start 0s infinite;
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
+}
+
+.quiz-box {
+  padding: 20px;
+}
+
+.question {
+  font-weight: bold;
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.question::before {
+  content: "Q. ";
+  color: red;
+}
+
+.options-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  margin-left: 20px;
+}
+
+.options-container button {
+  background-color: white;
+  color: #e53935;
+  border: 2px solid #e53935;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-align: left;
+  width: 300px;
+}
+
+.options-container button:hover {
+  background-color: #e53935;
+  color: white;
+}
+
+.quiz-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  border-top: 1px solid #eee;
+}
+
+.nav-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}
+
+.orange {
+  background-color: orange;
+}
+
+.green {
+  background-color: green;
+}
+
+.right-align {
+  margin-left: auto;
+}
