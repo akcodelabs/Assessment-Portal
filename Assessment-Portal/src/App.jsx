@@ -1,9 +1,12 @@
 import React, { useState } from 'react';
+import HomePage from './pages/HomePage';
 import logoTop from './assets/logo-top-left.png';
 import logoCenter from './assets/logo-center.png';
 
 function App() {
   const [role, setRole] = useState('Student');
+  // You can use a state to toggle between login and homepage if needed
+  // const [loggedIn, setLoggedIn] = useState(false);
 
   return (
     <div className="container">
@@ -29,22 +32,23 @@ function App() {
         </div>
 
         <form>
-  <div className="form-group">
-    <label>Email</label>
-    <input type="email" placeholder="your.email@example.com" required />
-  </div>
-  <div className="form-group">
-    <label>Password</label>
-    <input type="password" placeholder="Password" required />
-  </div>
-  <button type="submit" className="login-btn">Login</button>
-</form>
-
+          <div className="form-group">
+            <label>Email</label>
+            <input type="email" placeholder="your.email@example.com" required />
+          </div>
+          <div className="form-group">
+            <label>Password</label>
+            <input type="password" placeholder="Password" required />
+          </div>
+          <button type="submit" className="login-btn">Login</button>
+        </form>
 
         <p className="signup-text">
           Don’t have an account? <a href="#">Sign Up</a>
         </p>
       </div>
+      {/* Uncomment below to show HomePage after login */}
+      {/* <HomePage /> */}
     </div>
   );
 }
