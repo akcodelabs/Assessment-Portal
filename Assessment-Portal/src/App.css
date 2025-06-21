@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff;
+}
+
+.container {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-top {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+  height: 50px;
+}
+
+.login-box {
+  background: white;
+  padding: 30px 25px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  max-width: 360px;
+  text-align: center;
+}
+
+.logo-center {
+  height: 45px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  margin: 10px 0 5px;
+}
+
+.subtitle {
+  color: #555;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.role-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.role-buttons button {
+  flex: 1;
+  padding: 10px;
+  border: 2px solid #f97316;
+  background-color: white;
+  color: black;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.role-buttons button.active {
+  background-color: #f97316;
+  color: white;
+}
+
+form input {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #f97316;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.signup-text {
+  font-size: 14px;
+  margin-top: 12px;
+}
+
+.signup-text a {
+  color: #f97316;
+  text-decoration: none;
+}
+.form-group {
+  text-align: left;
+  margin-bottom: 12px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 4px;
+  font-weight: 500;
+}
